@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="08/22/20||15:26:55" using="Simscape Multibody Link Version 7.0" from="SolidWorks 27.2.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Jeep Matlab assembly" uid="Jeep Matlab assembly" version="187">
+<AssemblyFile name="Jeep Matlab assembly.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="wheel complete part-2" uid="wheel complete part-2" entityUid="wheel complete part*:*Default">
+<Transform>
+<Rotation>0 1 1.3965925355372533e-14 -1 0 -1.3965925355372533e-14 -1.3965925355372533e-14 -1.3965925355372533e-14 1</Rotation>
+<Translation>-0.23516630976841577 -0.11864633798254554 -0.018601933703379345</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel complete part-3" uid="wheel complete part-3" entityUid="wheel complete part*:*Default">
+<Transform>
+<Rotation>0 -1 -1.4086032181140176e-14 1 0 -1.4086032181140176e-14 1.4086032181140176e-14 -1.4086032181140176e-14 1</Rotation>
+<Translation>-0.089597220688788171 -0.044298752329965774 -0.018601933703378162</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel complete part-4" uid="wheel complete part-4" entityUid="wheel complete part*:*Default">
+<Transform>
+<Rotation>0 0.8690294351447434 -0.49476038731087646 -1 -6.9097866673093394e-15 -1.2136800177592093e-14 -1.3965925330550982e-14 0.49476038731087646 0.8690294351447434</Rotation>
+<Translation>-0.10606904499404407 -0.11864633798254559 -0.022962274969141185</Translation>
+</Transform>
+</Instance>
+<Instance name="Jeep body part-2" uid="Jeep body part-2" grounded="true" entityUid="Jeep body part*:*Default">
+<Transform>
+<Rotation>1 0 0 0 -3.4914813388431334e-15 -1 0 1 -3.4914813388431334e-15</Rotation>
+<Translation>-0.22809337694184312 0.079511335205810579 -0.084874800595219832</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel complete part-1" uid="wheel complete part-1" entityUid="wheel complete part*:*Default">
+<Transform>
+<Rotation>0 -0.72600951863962848 0.68768465072637419 1 -9.7041109567675009e-15 -1.0210147163061965e-14 1.4086032181009016e-14 0.68768465072637419 0.72600951863962848</Rotation>
+<Translation>-0.22427174622673807 -0.044298752329965656 -0.022942595816226666</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Jeep body part-2</Uid>
+</InstancePath>
+<Position>0.0066916117132410913 0.084977910461148054 0.11798388036206622</Position>
+<Axis>0 -1.059455084229704e-14 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>wheel complete part-1</Uid>
+</InstancePath>
+<Position>-0.0051737928262899566 0.013764544539813572 0.01870504356930619</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel complete part-1</Uid>
+</InstancePath>
+<Position>-0.0051737928262899566 0.013764544539813572 0.01870504356930619</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Jeep body part-2</Uid>
+</InstancePath>
+<Position>0.063481611713241126 0.084977910461147915 0.13098388036206626</Position>
+<Axis>0 1.04744440165294e-14 -1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Jeep body part-2</Uid>
+</InstancePath>
+<Position>0.0066916117132411468 0.08497791046114711 0.20398388036206627</Position>
+<Axis>0 1.04744440165294e-14 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>wheel complete part-2</Uid>
+</InstancePath>
+<Position>-0.0051737928262899635 0.013764544539813545 0.01870504356930619</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel complete part-2</Uid>
+</InstancePath>
+<Position>-0.0051737928262899635 0.013764544539813545 0.01870504356930619</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Jeep body part-2</Uid>
+</InstancePath>
+<Position>0.063481611713241126 0.084977910461147291 0.19098388036206626</Position>
+<Axis>0 -1.04744440165294e-14 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Jeep body part-2</Uid>
+</InstancePath>
+<Position>0.12473161171324115 0.084977910461148165 0.11798388036206629</Position>
+<Axis>0 -1.0594550842297043e-14 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>wheel complete part-3</Uid>
+</InstancePath>
+<Position>-0.0051737928262899566 0.013764544539813531 0.01870504356930619</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel complete part-3</Uid>
+</InstancePath>
+<Position>-0.0051737928262899566 0.013764544539813531 0.01870504356930619</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Jeep body part-2</Uid>
+</InstancePath>
+<Position>0.063481611713241126 0.084977910461147915 0.13098388036206626</Position>
+<Axis>0 1.04744440165294e-14 -1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Jeep body part-2</Uid>
+</InstancePath>
+<Position>0.1247316117132411 0.084977910461147194 0.20398388036206622</Position>
+<Axis>0 1.0474443991707825e-14 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>wheel complete part-4</Uid>
+</InstancePath>
+<Position>-0.0051737928262899496 0.013764544539813545 0.018705043569306183</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel complete part-4</Uid>
+</InstancePath>
+<Position>-0.0051737928262899496 0.013764544539813545 0.018705043569306183</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Jeep body part-2</Uid>
+</InstancePath>
+<Position>0.063481611713241126 0.084977910461147291 0.19098388036206626</Position>
+<Axis>0 -1.04744440165294e-14 1</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Jeep body part" uid="Jeep body part*:*Default" version="121">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Jeep body part.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.24848998364380978</Mass>
+<CenterOfMass>0.052370056106902117 0.1048216371341477 0.16098321593138307</CenterOfMass>
+<Inertia>0.00017893800905743263 0.00079170857614259383 0.00071713542732605056 3.7412361944592512e-08 -3.1056052612829224e-08 4.115855675473555e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Jeep body part_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="wheel complete part" uid="wheel complete part*:*Default" version="110">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="wheel complete part.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.014289563528688412</Mass>
+<CenterOfMass>0.0021435581243893251 0.013764546861724365 0.018705039547638674</CenterOfMass>
+<Inertia>1.3560147526532491e-06 9.6948621607226882e-07 9.6948609758492841e-07 1.026130475033749e-13 3.0470481678421356e-13 -1.7592140811897728e-13</Inertia>
+</MassProperties>
+<GeometryFile name="wheel complete part_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
